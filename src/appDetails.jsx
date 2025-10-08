@@ -4,11 +4,16 @@ import { FiDownload } from "react-icons/fi";
 import { CiStar } from "react-icons/ci";
 import { MdPreview } from "react-icons/md";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { addApp } from './storeData';
 
 const appDetails = () => {
     const {id} = useParams();
     const appData = useLoaderData();
     const sApp = appData.find(app => app.id == id);
+
+    const handleInstall = (id) =>{
+           addApp(id)
+    }
     return (
         <div>
             <div className='flex gap-20 items-center m-10'>
@@ -36,7 +41,7 @@ const appDetails = () => {
                        <span className='text-3xl'>{sApp.reviews}</span>
                        </div>
                     </div>
-                    <p className='btn btn-accent'>Install Now ({sApp.size}MB)</p>
+                    <p onClick={() => handleInstall(id)} className='btn btn-accent'>Install Now ({sApp.size}MB)</p>
                 </div>
             </div>
 
