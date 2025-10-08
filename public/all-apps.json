@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/54/16/b4/5416b4f9-7592-422b-f078-4696184faf58/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+    "title": "ChatMaster",
+    "companyName": "TechNova Ltd",
+    "id": 1,
+    "description": "An AI-powered chat assistant to manage your daily tasks.",
+    "size": 45,
+    "reviews": 10234,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 560 },
+      { "name": "3 star", "count": 1340 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 6814 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/5SLG2s107uPPgbkjFsKxdEMI8P85FDxZzZ2lXsryBxP3DhcH49ILOtW7verzgV6Xoavz",
+    "title": "FitTrack",
+    "companyName": "HealthPlus",
+    "id": 2,
+    "description": "Track workouts, calories, and health statistics.",
+    "size": 60,
+    "reviews": 8945,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3545 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/gsIyPP1pr6Phvc9VdJqA9v5EdyOfL0KTj-hk_gzO0yLUZgfT_KDYjpsJ2PQMBJuZdX0h",
+    "title": "EduLearn",
+    "companyName": "BrightMind",
+    "id": 3,
+    "description": "Interactive courses and quizzes for online learning.",
+    "size": 80,
+    "reviews": 15600,
+    "ratingAvg": 4.7,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 460 },
+      { "name": "3 star", "count": 1290 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "image": "https://mir-s3-cdn-cf.behance.net/projects/404/ed5ecd179783201.Y3JvcCwxNjc4LDEzMTMsODg5LDA.jpg",
+    "title": "TravelGo",
+    "companyName": "Skyline Tech",
+    "id": 4,
+    "description": "Book flights, hotels, and discover destinations.",
+    "size": 50,
+    "reviews": 7832,
+    "ratingAvg": 4.1,
+    "downloads": 860000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 920 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 1812 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQS7AfWemGwRl8PehNXjnT2WlQJT_mVaXbqw&s",
+    "title": "FoodHub",
+    "companyName": "QuickBite",
+    "id": 5,
+    "description": "Order food from your favorite restaurants nearby.",
+    "size": 55,
+    "reviews": 20500,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/game-zone-logo-design-template_145155-1668.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "GameZone",
+    "companyName": "PixelPlay",
+    "id": 6,
+    "description": "Arcade and multiplayer gaming hub.",
+    "size": 120,
+    "reviews": 30500,
+    "ratingAvg": 4.8,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 20100 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/SNT0rEvrMhbEfI7EfWorSrZo_YuznICGwihb5mHgdbCyW0showZNKDgzPG5cRNaw3K_K=w600-h300-pc0xffffff-pd",
+    "title": "FinancePro",
+    "companyName": "MoneyMate",
+    "id": 7,
+    "description": "Personal finance tracking and budgeting app.",
+    "size": 40,
+    "reviews": 4800,
+    "ratingAvg": 4.2,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 1150 }
+    ]
+  },
+  {
+    "image": "https://cdn6.aptoide.com/imgs/d/1/2/d127cac5c0c523641c36364de7b4a7dd_icon.jpg",
+    "title": "MusicStream",
+    "companyName": "BeatLabs",
+    "id": 8,
+    "description": "Stream and download unlimited music.",
+    "size": 95,
+    "reviews": 12500,
+    "ratingAvg": 4.4,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0-qi9P7Fd0qY2qHRUEutocpP5gAbkI1f6Q&s",
+    "title": "PhotoEdit",
+    "companyName": "SnapTech",
+    "id": 9,
+    "description": "Powerful photo editor with AI filters.",
+    "size": 85,
+    "reviews": 6700,
+    "ratingAvg": 4.0,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/qlqKi0sZoDemnYQ-weyKPiB3BGS4Lt2OCmWQ16bBVcUDD0t_7VrZQg1pjdrGeQOxukU",
+    "title": "NewsDaily",
+    "companyName": "InfoStream",
+    "id": 10,
+    "description": "Stay updated with global and local news.",
+    "size": 35,
+    "reviews": 5400,
+    "ratingAvg": 3.9,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/QGrAyCWOD1y8YfSLde7FRDSIadKaMVWpKn-hgxNzs4UT4g9Bz1I0DblRkLdMUJ8gdlGs",
+    "title": "ShopEase",
+    "companyName": "eComX",
+    "id": 11,
+    "description": "Online shopping for everything you need.",
+    "size": 70,
+    "reviews": 18200,
+    "ratingAvg": 4.6,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 2900 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 8200 }
+    ]
+  },
+  {
+    "image": "https://images.seeklogo.com/logo-png/61/2/ride-now-app-uganda-logo-png_seeklogo-612630.png",
+    "title": "RideNow",
+    "companyName": "MoveFast",
+    "id": 12,
+    "description": "Book cabs and rides instantly.",
+    "size": 65,
+    "reviews": 15400,
+    "ratingAvg": 4.5,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 6900 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFt_nUf1lgyGHkilrL90dTL7QN7E4GsWlZsQ&s",
+    "title": "DocCare",
+    "companyName": "MediTech",
+    "id": 13,
+    "description": "Consult doctors online and manage health records.",
+    "size": 55,
+    "reviews": 7200,
+    "ratingAvg": 4.2,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKMwxyyCzCSh00JvZh7UR7HWHga9jtWHpiEg&s",
+    "title": "TaskBuddy",
+    "companyName": "OrganizeIt",
+    "id": 14,
+    "description": "Organize tasks and boost productivity.",
+    "size": 40,
+    "reviews": 4900,
+    "ratingAvg": 4.3,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 1700 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/gaJwGkyLAUV6F8nZICtD8AnYOkLLGtdSpvk2pmN-hfrgUWwHJ6TgJHHiApYp0QsjIhY=w600-h300-pc0xffffff-pd",
+    "title": "WeatherNow",
+    "companyName": "ClimateX",
+    "id": 15,
+    "description": "Real-time weather updates and forecasts.",
+    "size": 30,
+    "reviews": 6200,
+    "ratingAvg": 4.0,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  }
+]
