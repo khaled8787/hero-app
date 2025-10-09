@@ -4,8 +4,20 @@ import { getApp } from './storeData';
 import { FaArrowDown } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 
-const installedApp = () => {
 
+const installedApp = () => {
+    const [sort, SetSort] = useState('');
+const handleSort = (type) =>{
+    SetSort(type);
+    if(type === 'Size'){
+        const sortSize = [...install].sort((a,b) => a.size - b.size);
+        setInstall(sortSize);
+    }
+    if(type === 'Download'){
+        const sortDownload = [...install].sort((a,b) => a.downloads - b.downloads);
+        setInstall(sortDownload);
+    }
+}
     const [install, setInstall] = useState([])
     const app = useLoaderData();
     useEffect(() => {
@@ -13,10 +25,24 @@ const installedApp = () => {
         const parseApp = storeApp.map(id => parseInt(id));
         const filterApp = app.filter(a => parseApp.includes(a.id));
         setInstall(filterApp);
-    }, [])
+    }, []);
     return (
         <div>
-            <p className='text-3xl ml-8 font-semibold mt-8 mb-4'>{install.length} Found App</p>
+            <div className='text-center mt-5'>
+                <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
+                <p className='text-gray-500 mt-2'>Explore All Trending Apps on the Market developed by us</p>
+            </div>
+            <div className='mt-8 flex justify-between mx-4'>
+               <p className='text-3xl ml-8 font-semibold mb-4'>{install.length} Found App</p>
+               <div className="dropdown dropdown-bottom dropdown-end">
+  <div tabIndex={0} role="button" className="btn m-1">Sort By {sort ? sort : '⬇️'}</div>
+  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li><a onClick={() => handleSort('Size')}>Size</a></li>
+    <li><a onClick={() => handleSort('Download')}>Download</a></li>
+  </ul>
+</div>
+            </div>
+            
 
          <div className='ml-8'>
             {

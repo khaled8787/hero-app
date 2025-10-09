@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { FiDownload } from "react-icons/fi";
 import { CiStar } from "react-icons/ci";
 import { MdPreview } from "react-icons/md";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { addApp } from './storeData';
-
+import { toast } from 'react-toastify';
 const appDetails = () => {
     const {id} = useParams();
     const appData = useLoaderData();
     const sApp = appData.find(app => app.id == id);
-
+    const [installed, setInstalled] = useState(false)
     const handleInstall = (id) =>{
-           addApp(id)
+           addApp(id);
+           setInstalled(true);
+           toast.success(`${sApp.title} Installed Successfully`);
     }
     return (
         <div>
@@ -41,7 +43,7 @@ const appDetails = () => {
                        <span className='text-3xl'>{sApp.reviews}</span>
                        </div>
                     </div>
-                    <p onClick={() => handleInstall(id)} className='btn btn-accent'>Install Now ({sApp.size}MB)</p>
+                    <p onClick={() => handleInstall(id)} disabled = {installed} className={`btn btn-accent ${installed ? 'disable' : ''}`}>{installed ? 'Installed' : 'Install Now'} ({sApp.size}MB)</p>
                 </div>
             </div>
 

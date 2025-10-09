@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
-import { Link, Links } from 'react-router';
+import { Link, Links, NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-    <Link to={'/'}><li className='m-2 text-xl'>Home</li></Link>
-    <Link to={'/apps'}><li className='m-2 text-xl'>Apps</li></Link>
-    <Link to={'/installedApp'}><li className='m-2 text-xl'>Installation</li></Link>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/'}><li>Home</li></NavLink>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/apps'}><li className='m-2 text-xl'>Apps</li></NavLink>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/installedApp'}><li className='m-2 text-xl  '>Installation</li></NavLink>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm w-full">
@@ -21,10 +21,12 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
+    <Link to={'/'}>
     <div className='flex items-center gap-2'>
         <img className='h-[40px] w-[40px]' src="/src/assets/logo.png" alt="" />
       <a className="text-xl text-purple-700 font-bold">HERO.IO</a>
     </div>
+    </Link>
 
   </div>
   <div className="navbar-center hidden lg:flex">

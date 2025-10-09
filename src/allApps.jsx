@@ -9,6 +9,10 @@ const allApps = () => {
         <div>
             <h1 className='text-4xl text-center font-bold mt-8'>Our All Applications</h1>
             <p className='text-gray-500 text-center mb-8'>Explore All Apps on the Market developed by us. We code for Millions</p>
+
+            <div>
+                
+            </div>
             <div>
 
             </div>
