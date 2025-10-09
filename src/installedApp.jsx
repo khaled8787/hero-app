@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getApp } from './storeData';
+import { getApp, removeApp } from './storeData';
 import { FaArrowDown } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
+import { toast } from 'react-toastify';
 
 
 const installedApp = () => {
@@ -26,6 +27,14 @@ const handleSort = (type) =>{
         const filterApp = app.filter(a => parseApp.includes(a.id));
         setInstall(filterApp);
     }, []);
+
+     const handleUnInstall = (id) =>{
+        removeApp(id);
+        const remainingApp = install.filter(a => a.id !== id);
+        setInstall(remainingApp);
+        toast.success('App Uninstalled Successfully');
+     }
+
     return (
         <div>
             <div className='text-center mt-5'>
@@ -59,7 +68,7 @@ const handleSort = (type) =>{
                             </div>
                         </div>
                            <div>
-                            <p className='btn btn-accent'>Uninstall</p>
+                            <p onClick={() => handleUnInstall(i.id)} className='btn btn-accent'>Uninstall</p>
                            </div>
                         </div>
                         

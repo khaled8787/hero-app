@@ -1,9 +1,19 @@
-import React from 'react';
-import { Link, useLoaderData } from 'react-router';
+import React, { useState } from 'react';
+import { Link, useLoaderData, useNavigate } from 'react-router';
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
 const allApps = () => {
     const data = useLoaderData();
+    const [search, setSearch] = useState('');
+    const navigate = useNavigate();
+
+    const filterData = data.filter(app => app.title.toLowerCase().includes(search.toLowerCase()));
+
+    const handleSearch = () =>{
+        if(filterData.length === 0 && search.trim() !== ''){
+            navigate('/notfound');
+        }
+    }
     
     return (
         <div>
@@ -13,12 +23,30 @@ const allApps = () => {
             <div>
                 
             </div>
-            <div>
-
+            <div className='flex justify-between mx-26 mb-8'>
+                <p className='text-2xl'>({data.length}) App Found</p>
+               <div className='flex'>
+                 <label className="input">
+                <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2.5"
+                fill="none"
+                stroke="currentColor"
+                >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+                </g>
+                </svg>
+                <input onChange={(a) => setSearch(a.target.value)} type="search" required placeholder="Search" />
+                </label>
+                <button onClick={handleSearch} className='btn btn-primary'>Search</button>
+               </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10'>
                  {
-                data.map((sData) => (
+                filterData.map((sData) => (
                     <Link to={`/appDetails/${sData.id}`}>
                     <div className="p-4 shadow-2xl w-[340px] h-[430px] mx-auto rounded-xl">
                       <img className="h-[310px] w-[310px]" src={sData.image} alt={sData.title} />

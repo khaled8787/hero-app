@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                 <div className='text-white'>
                      <h4 className='text-xl font-semibold'>Social Links</h4>
-                     <div className='flex gap-4'>
+                     <div className='flex gap-7 mt-2'>
                       <CiFacebook /> 
                       <FaLinkedin />
                       <FaXTwitter />
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 </div>
 
-
+               <p className='text-gray-700 text-center mt-16'>Copyright © 2025 - All right reserved</p>
               </div>
             
         

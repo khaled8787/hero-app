@@ -4,9 +4,9 @@ import { Link, Links, NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/'}><li>Home</li></NavLink>
-    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/apps'}><li className='m-2 text-xl'>Apps</li></NavLink>
-    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? 'bg bg-primary m-2 text-xl p-2 rounded-sm text-white': ''}`} to={'/installedApp'}><li className='m-2 text-xl  '>Installation</li></NavLink>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? ' m-2 text-green-700 border-b-2': ''}`} to={'/'}><li>Home</li></NavLink>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? ' text-xl text-green-700 border-b-2': ''}`} to={'/apps'}><li className=' text-xl'>Apps</li></NavLink>
+    <NavLink className={({isActive}) => `m-2 text-xl ${isActive ? ' text-xl m-2 text-green-700 border-b-2': ''}`} to={'/installedApp'}><li className='text-xl  '>Installation</li></NavLink>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm w-full">
