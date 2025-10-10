@@ -4,7 +4,7 @@ import { getApp, removeApp } from './storeData';
 import { FaArrowDown } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import { toast } from 'react-toastify';
-
+import { ToastContainer} from 'react-toastify';
 
 const installedApp = () => {
     const [sort, SetSort] = useState('');
@@ -27,17 +27,16 @@ const handleSort = (type) =>{
         const filterApp = app.filter(a => parseApp.includes(a.id));
         setInstall(filterApp);
     }, []);
-
      const handleUnInstall = (id) =>{
         removeApp(id);
         const remainingApp = install.filter(a => a.id !== id);
         setInstall(remainingApp);
-        toast.success('App Uninstalled Successfully');
+        toast.success(`App Uninstalled Successfully`);
      }
-
     return (
         <div>
-            <div className='text-center mt-5'>
+            <ToastContainer></ToastContainer>
+            <div className='text-center mt-5 mx-3'>
                 <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
                 <p className='text-gray-500 mt-2'>Explore All Trending Apps on the Market developed by us</p>
             </div>
@@ -53,11 +52,11 @@ const handleSort = (type) =>{
             </div>
             
 
-         <div className='ml-8'>
+         <div className='md:ml-8'>
             {
                 install.map(i => (
-                    <div className='flex gap-5 mb-2 bg-gray-100 p-3 items-center'>
-                        <img className='h-[80px] w-[80px] rounded-md p-3 bg-white' src={i.image} alt={i.title} />
+                    <div className='flex gap-5 mb-2 bg-gray-100 md:p-3 items-center mx-2'>
+                        <img className='h-[70px] w-[70px] md:h-[80px] md:w-[80px] rounded-md md:p-3 bg-white' src={i.image} alt={i.title} />
                         <div className='flex justify-between items-center w-full'>
                             <div>
                             <h3 className='text-xl mb-3'>{i.title}</h3>

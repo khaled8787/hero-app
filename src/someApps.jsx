@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 
 const SomeApps = ({singleApp}) => {
-    console.log(singleApp)
+    
     return (
         <div>
            <Link to={`/appDetails/${singleApp.id}`}>

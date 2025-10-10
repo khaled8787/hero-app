@@ -6,13 +6,16 @@ const allApps = () => {
     const data = useLoaderData();
     const [search, setSearch] = useState('');
     const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
 
     const filterData = data.filter(app => app.title.toLowerCase().includes(search.toLowerCase()));
 
     const handleSearch = () =>{
+        setLoading(true);
         if(filterData.length === 0 && search.trim() !== ''){
             navigate('/notfound');
         }
+        setLoading(false);
     }
     
     return (
@@ -23,9 +26,9 @@ const allApps = () => {
             <div>
                 
             </div>
-            <div className='flex justify-between mx-26 mb-8'>
-                <p className='text-2xl'>({data.length}) App Found</p>
-               <div className='flex'>
+            <div className='md:flex justify-between mx-26 mb-8'>
+                <p className='text-2xl mb-2'>({data.length}) App Found</p>
+               <div className='md:flex'>
                  <label className="input">
                 <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g
@@ -44,7 +47,11 @@ const allApps = () => {
                 <button onClick={handleSearch} className='btn btn-primary'>Search</button>
                </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10'>
+            {
+                loading ? (<div className='flex justify-center items-center'>
+                  <span className='loading loading-spinner loading-lg text-primary'></span>
+                </div>) : (
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10'>
                  {
                 filterData.map((sData) => (
                     <Link to={`/appDetails/${sData.id}`}>
@@ -61,6 +68,8 @@ const allApps = () => {
                 ))
             }
             </div>
+                )
+            }
         </div>
     );
 };
