@@ -12,7 +12,7 @@ const Footer = () => {
 
               <div className='flex justify-between mt-10 mx-10 text-white pt-10'>
                 <div className='flex items-center gap-2'>
-                  <img className='h-[40px] w-[40px]' src="/src/assets/logo.png" alt="" />
+                  <img className='h-[40px] w-[40px]' src="assets/logo.png" alt="" />
                   <a className="text-xl text-purple-700 font-bold">AppVerse</a>
                 </div>
                 <div className='text-white'>
